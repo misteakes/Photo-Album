@@ -1,0 +1,544 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+a {
+  text-decoration: wavy underline #C5E9EA;
+  color: var(--secondary-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --primary-color: #F4EAD3;
+  --secondary-color: #FF7677;
+  --tertiary-color: #C5E9EA;
+  --transparent-white: rgba(255,255,255,.9);
+  --title-font: "Montserrat", sans-serif;
+  --copy-font: "Montserrat", sans-serif;
+}
+
+body {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-size: 9px;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 10px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* margin: 0 auto; */
+}
+.container--small {
+  max-width: 900px;
+}
+
+.page-title {
+  display: inline-block;
+  font-size: 6.8em;
+  font-family: var(--copy-font);
+  position: relative;
+}
+.page-title:before {
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  height: 18px;
+  width: 100%;
+  background-color: var(--tertiary-color);
+  content: "";
+  z-index: -1;
+}
+
+.description {
+  font-size: 3.2em;
+  font-family: var(--copy-font);
+}
+
+.gallery__item {
+  display: block;
+  float: left;
+  margin-right: 0;
+  width: calc(20% - 10px);
+  margin-bottom: 10px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.gallery__image {
+  width: 100%;
+  height: auto;
+}
+
+.modal {
+  opacity: 0;
+  pointer-events: none;
+  background-color: var(--transparent-white);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.modal--open {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal__image {
+  position: absolute;
+  width: calc(100% - 80px);
+  max-width: 900px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.modal-close {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.modal-close:before, .modal-close:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 15px;
+  width: 3px;
+  height: 30px;
+  background-color: var(--secondary-color);
+  transition: background-color 0.2s ease-in-out;
+}
+.modal-close:before {
+  transform: rotate(45deg);
+}
+.modal-close:after {
+  transform: rotate(-45deg);
+}
+.modal-close:hover:before, .modal-close:hover:after {
+  background-color: var(--tertiary-color);
+}
+
+.filter-button {
+  border: none;
+  font-size: 1.6em;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.filter-button.active, .filter-button:hover {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+.filter-button:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+#pic1 {
+  transform: rotate(90deg);
+  opacity: .28;
+}
+#pic1:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic2{
+  opacity: .28;
+}
+#pic2:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic3{
+  opacity: .28;
+}
+#pic3:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic5 {
+  transform: rotate(90deg);
+  opacity: .28;
+}
+#pic5:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic7{
+  opacity: .28;
+}
+#pic7:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic8 {
+  transform: rotate(180deg);
+  opacity: .28;
+}
+#pic8:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic9{
+  opacity: .28;
+}
+#pic9:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic11 {
+  transform: rotate(90deg);
+  opacity: .28;
+}
+#pic11:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic12{
+  opacity: .28;
+}
+#pic12:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic13{
+  opacity: .28;
+}
+#pic13:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic14 {
+  transform: rotate(90deg);
+  opacity: .28;
+}
+#pic14:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic15{
+  opacity: .28;
+}
+#pic15:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic16 {
+  transform: rotate(90deg);
+  opacity: .28;
+}
+#pic16:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic17 {
+  transform: rotate(90deg);
+  opacity: .28;
+}
+#pic17:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic18{
+  opacity: .28;
+}
+#pic18:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic19{
+  opacity: .28;
+}
+#pic19:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic20 {
+  transform: rotate(90deg);
+  opacity: .28;
+}
+#pic20:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic21{
+  opacity: .28;
+}
+#pic21:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic22{
+  opacity: .28;
+}
+#pic22:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic23{
+  opacity: .28;
+}
+#pic23:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic25 {
+  transform: rotate(180deg);
+  opacity: .28;
+}
+#pic25:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic26{
+  opacity: .28;
+}
+#pic26:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic27{
+  opacity: .28;
+}
+#pic27:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic29 {
+  transform: rotate(90deg);
+  opacity: .28;
+}
+#pic29:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic30{
+  opacity: .28;
+}
+#pic30:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic31{
+  opacity: .28;
+}
+#pic31:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic32 {
+  transform: rotate(90deg);
+  opacity: .28;
+}
+#pic32:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic33 {
+  transform: rotate(90deg);
+  opacity: .28;
+}
+#pic33:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic34{
+  opacity: .28;
+}
+#pic34:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic37{
+  opacity: .28;
+}
+#pic37:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic38{
+  opacity: .28;
+}
+#pic38:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic40 {
+  opacity: .28;
+}
+#pic40:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic42 {
+  transform: rotate(180deg);
+  opacity: .28;
+}
+#pic42:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic43{
+  opacity: .28;
+}
+#pic43:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic44 {
+  transform: rotate(90deg);
+  opacity: .28;
+}
+#pic44:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic48{
+  opacity: .28;
+}
+#pic48:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}
+
+#pic49{
+  opacity: .28;
+}
+#pic49:hover{
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.68s;
+}

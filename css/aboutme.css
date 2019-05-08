@@ -1,0 +1,40 @@
+body{
+    padding: 0;
+    background-color: #F4EAD3;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+#misty{
+    transform: rotate(90deg);
+    margin-top: 10vh;
+}
+
+.column{
+    height: auto;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+h1{
+    margin-top: 10vh;
+    font-size: 3.2em;
+    color: #FF7677;
+    text-decoration: wavy underline #C5E9EA;
+}
+h1:hover {
+    text-decoration: none;
+    color: #C5E9EA;
+  }
+
+a:hover , a:active , a:link , a:visited{
+    text-decoration: none;
+}
+
+h2{
+    margin-right: 20px;
+    font-size: 22px;
+    color: #FF7677;
+}
+

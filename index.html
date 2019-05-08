@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Photo Album">
+		<meta name="keywords" content="Photo Album">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+		<title>My Photo Album</title>
+
+		<meta property="og:url" content="http://" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Photo Album" />
+		<meta property="og:description" content="Photo Album" />
+		<meta property="og:image" content="" />
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<header class="container container--small">
+			<h1 class="page-title">what's living in my phone...</h1>
+		</header>
+		<div class="description container container--small">
+			<p>there are a lot of pictures on my phone, and by a lot... 
+				<br>
+				i mean 17,886! the ones ahead are all from 2019 <a href="aboutme.html">:-)</a>
+				<br>
+				<br>
+			</p>
+			<a href="https://misteakes.github.io/creative-computing-04-final-project/mainpage.html">click here for 2016-2018 pictures!</a>
+		</div>
+		<div class="container container--small">
+			<button class="filter-button active" data-filter="*" id="button">show all</button>
+			<button class="filter-button" data-filter=".food">food</button>
+			<button class="filter-button" data-filter=".me">me</button>
+			<button class="filter-button" data-filter=".friends">friends</button>
+			<button class="filter-button" data-filter=".screenshots">screenshots</button>
+			<button class="filter-button" data-filter=".outdoors">outdoors</button>
+		</div>
+		<div class="gallery container">
+			<div class="gallery__item food">
+				<img src="images/01.jpg" class="gallery__image" id="pic1">
+			</div>
+			<div class="gallery__item outdoors">
+				<img src="images/02.jpg" class="gallery__image" id="pic2">
+			</div>
+			<div class="gallery__item friends">
+				<img src="images/03.jpg" class="gallery__image" id="pic3">
+			</div>
+			<!-- <div class="gallery__item outdoors">
+				<img src="images/04.jpg" class="gallery__image" id="pic4">
+			</div> -->
+			<div class="gallery__item food">
+				<img src="images/05.jpg" class="gallery__image" id="pic5">
+			</div>
+			<!-- <div class="gallery__item friends">
+				<img src="images/06.jpg" class="gallery__image" id="pic6">
+			</div> -->
+			<div class="gallery__item screenshots">
+				<img src="images/07.jpg" class="gallery__image" id="pic7">
+			</div>
+			<div class="gallery__item me">
+				<img src="images/08.jpg" class="gallery__image" id="pic8">
+			</div>
+			<div class="gallery__item screenshots">
+				<img src="images/09.jpg" class="gallery__image" id="pic9">
+			</div>
+			<!-- <div class="gallery__item friends">
+				<img src="images/10.jpg" class="gallery__image" id="pic10">
+			</div> -->
+			<div class="gallery__item food">
+				<img src="images/11.jpg" class="gallery__image" id="pic11">
+			</div>
+			<div class="gallery__item screenshots">
+				<img src="images/12.jpg" class="gallery__image" id="pic12">
+			</div>
+			<div class="gallery__item food">
+				<img src="images/13.jpg" class="gallery__image" id="pic13">
+			</div>
+			<div class="gallery__item food">
+				<img src="images/14.jpg" class="gallery__image" id="pic14">
+			</div>
+			<div class="gallery__item me">
+				<img src="images/15.jpg" class="gallery__image" id="pic15">
+			</div>
+			<div class="gallery__item food">
+				<img src="images/16.jpg" class="gallery__image" id="pic16">
+			</div>
+			<div class="gallery__item friends">
+				<img src="images/17.jpg" class="gallery__image" id="pic17">
+			</div>
+			<div class="gallery__item food">
+				<img src="images/18.jpg" class="gallery__image" id="pic18">
+			</div>
+			<div class="gallery__item outdoors">
+				<img src="images/19.jpg" class="gallery__image" id="pic19">
+			</div>
+			<div class="gallery__item food">
+				<img src="images/20.jpg" class="gallery__image" id="pic20">
+			</div>
+			<div class="gallery__item outdoors">
+				<img src="images/21.jpg" class="gallery__image" id="pic21">
+			</div>
+			<div class="gallery__item screenshots">
+				<img src="images/22.jpg" class="gallery__image" id="pic22">
+			</div>
+			<div class="gallery__item food">
+				<img src="images/23.jpg" class="gallery__image" id="pic23">
+			</div>
+			<!-- <div class="gallery__item food">
+				<img src="images/24.jpg" class="gallery__image" id="pic24">
+			</div> -->
+			<div class="gallery__item friends">
+				<img src="images/25.jpg" class="gallery__image" id="pic25">
+			</div>
+			<div class="gallery__item me">
+				<img src="images/26.jpg" class="gallery__image" id="pic26">
+			</div>
+			<div class="gallery__item food">
+				<img src="images/27.jpg" class="gallery__image" id="pic27">
+			</div>
+			<!-- <div class="gallery__item outdoors">
+				<img src="images/28.jpg" class="gallery__image" id="pic28">
+			</div> -->
+			<div class="gallery__item food">
+				<img src="images/29.jpg" class="gallery__image" id="pic29">
+			</div>
+			<div class="gallery__item screenshots">
+				<img src="images/30.jpg" class="gallery__image" id="pic30">
+			</div>
+			<div class="gallery__item screenshots">
+				<img src="images/31.jpg" class="gallery__image" id="pic31">
+			</div>
+			<div class="gallery__item food">
+				<img src="images/32.jpg" class="gallery__image" id="pic32">
+			</div>
+			<div class="gallery__item food">
+				<img src="images/33.jpg" class="gallery__image" id="pic33">
+			</div>
+			<div class="gallery__item screenshots">
+				<img src="images/34.jpg" class="gallery__image" id="pic34">
+			</div>
+			<!-- <div class="gallery__item food">
+				<img src="images/35.jpg" class="gallery__image" id="pic35">
+			</div> -->
+			<!-- <div class="gallery__item outdoors">
+				<img src="images/36.jpg" class="gallery__image" id="pic36">
+			</div> -->
+			<div class="gallery__item me">
+				<img src="images/37.jpg" class="gallery__image" id="pic37">
+			</div>
+			<div class="gallery__item outdoors">
+				<img src="images/38.jpg" class="gallery__image" id="pic38">
+			</div>
+			<!-- <div class="gallery__item food">
+				<img src="images/39.jpg" class="gallery__image" id="pic39">
+			</div> -->
+			<div class="gallery__item outdoors">
+				<img src="images/40.jpg" class="gallery__image" id="pic40">
+			</div>
+			<!-- <div class="gallery__item food">
+				<img src="images/41.jpg" class="gallery__image" id="pic41">
+			</div> -->
+			<div class="gallery__item friends">
+				<img src="images/42.jpg" class="gallery__image" id="pic42">
+			</div>
+			<div class="gallery__item screenshots">
+				<img src="images/43.jpg" class="gallery__image" id="pic43">
+			</div>
+			<div class="gallery__item food">
+				<img src="images/44.jpg" class="gallery__image" id="pic44">
+			</div>
+			<!-- <div class="gallery__item me">
+				<img src="images/45.jpg" class="gallery__image" id="pic45">
+			</div> -->
+			<!-- <div class="gallery__item outdoors">
+				<img src="images/46.jpg" class="gallery__image" id="pic46">
+			</div> -->
+			<!-- <div class="gallery__item outdoors">
+				<img src="images/47.jpg" class="gallery__image" id="pic47">
+			</div> -->
+			<div class="gallery__item friends">
+				<img src="images/48.jpg" class="gallery__image" id="pic48">
+			</div>
+			<div class="gallery__item me">
+				<img src="images/49.jpg" class="gallery__image" id="pic49">
+			</div>
+			<!-- <div class="gallery__item food">
+				<img src="images/50.jpg" class="gallery__image" id="pic50">
+			</div> -->
+			<!-- <div class="gallery__item me">
+				<img src="images/51.jpg" class="gallery__image" id="pic51">
+			</div> -->
+			<!-- <div class="gallery__item screenshots">
+				<img src="images/52.jpg" class="gallery__image" id="pic52">
+			</div> -->
+		</div>
+
+		<div class="modal">
+
+			<div class="modal-close"></div>
+			<img class="modal__image" src="" alt="">
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+		<script src="js/scripts.js"></script>
+
+	</body>
+</html>
